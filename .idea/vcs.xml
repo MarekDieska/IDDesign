@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/IDDesign" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/IDDesign/site_files" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Intrakove_recepty_z_lasky/Intrakove_recepty_z_lasky" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MarekDieska" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MarekDieska/Clanok" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Unity_New" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Unity_New/Unity_New" vcs="Git" />
   </component>
 </project>
