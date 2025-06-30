@@ -1,4 +1,4 @@
-<section>
+<section id="con">
     <p>Kontaktné údaje</p>
     <br><br>
 </section>
