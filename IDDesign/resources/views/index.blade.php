@@ -6,7 +6,7 @@
     <title>ID-design</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
+<body class="text-center">
 @include("../components/header")
 @include("../components/banner")
 @include("../components/landing")

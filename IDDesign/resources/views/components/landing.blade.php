@@ -1,4 +1,4 @@
-<section class="bg-gray-200 h-[80vh] grid grid-cols-2 items-center">
+<section class="bg-gray-200 h-[80vh] p-2 grid grid-cols-2 items-center">
     <h1 class="col-span-2 justify-self-center">
         Kompletné riešenia v oblasti alternatívnych zdrojov energie
     </h1>
