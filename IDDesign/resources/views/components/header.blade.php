@@ -1,11 +1,8 @@
-<div>
-    <div class="grid grid-cols-3">
-        <img src="{{ asset('storage/images/logo.webp') }}" alt="logo firmy">
-        <div>
-            <p>Služby</p>
-        </div>
-        <div>
-            <p>Kontakt</p>
-        </div>
-    </div>
-</div>
+<header class="grid grid-cols-1 sm:grid-cols-2 justify-items-center">
+    <img src="{{ asset('storage/images/logo.webp') }}" alt="logo firmy">
+    <nav class="grid grid-cols-2 justify-items-between">
+        <a href="#">Služby</a>
+        <a href="#">Kontakt</a>
+    </nav>
+</header>
+

@@ -7,11 +7,16 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-<header class="">
-    @include("../components/header")
-</header>
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-</h1>
+@include("../components/header")
+@include("../components/banner")
+@include("../components/landing")
+@include("../components/service")
+@include("../components/supply")
+@include("../components/about")
+@include("../components/contact")
+@include("../components/map")
+@include("../components/mail")
+@include("../components/project")
+@include("../components/footer")
 </body>
 </html>
