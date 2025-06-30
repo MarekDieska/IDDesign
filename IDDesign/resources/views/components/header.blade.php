@@ -1,10 +1,11 @@
 <div>
     <div class="grid grid-cols-3">
+        <img src="{{ asset('storage/images/logo.webp') }}" alt="logo firmy">
         <div>
-            <img src="{{ asset('storage/images/logo.webp') }}" alt="logo firmy">
+            <p>Služby</p>
         </div>
         <div>
-            <p>ID-design</p>
+            <p>Kontakt</p>
         </div>
     </div>
 </div>
