@@ -4,6 +4,7 @@
         style="border:0; width: 100%; height: 100%;"
         allowfullscreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
+        referrerpolicy="no-referrer-when-downgrade"
+        title="mapa kde sa firma nachadza">
     </iframe>
 </section>
