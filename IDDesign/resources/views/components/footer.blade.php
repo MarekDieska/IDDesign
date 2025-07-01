@@ -1,4 +1,4 @@
-<section class="p-8">
+<section class="p-8 bg-gradient-to-r from-gray-400 via-gray-300 to-gray-400">
     <a href="#top">
         <button class="bg-gray-800 text-white justify-self-center font-bold border rounded-3xl m-2 py-2 px-5">
             domov

@@ -6,8 +6,8 @@
         <h1 class="text-gray-50 font-extrabold text-3xl px-4">
             Kompletné riešenia v oblasti alternatívnych zdrojov energie
         </h1>
-        <button class="bg-blue-800 text-white rounded-3xl w-32 h-12 mt-20 text-xl font-bold mx-auto md:mx-0">
+        <a href="#ser" class="bg-blue-800 text-white rounded-3xl w-32 h-12 mt-20 text-center text-xl font-bold mx-auto md:mx-0 flex items-center justify-center">
             Služby
-        </button>
+        </a>
     </div>
 </section>
