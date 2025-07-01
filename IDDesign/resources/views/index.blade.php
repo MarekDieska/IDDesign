@@ -11,6 +11,7 @@
 @include("../components/banner")
 @include("../components/landing")
 @include("../components/service")
+@include("../components/numbers")
 @include("../components/supply")
 @include("../components/about")
 @include("../components/contact")
