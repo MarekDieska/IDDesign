@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const animateCounter = (el) => {
     const target = +el.getAttribute("data-target");
-    const duration = target*10;
+    const duration = 2000;
     const startTime = performance.now();
 
     const update = (now) => {
