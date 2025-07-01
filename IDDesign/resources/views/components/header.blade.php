@@ -1,6 +1,6 @@
 <header class="grid grid-cols-12 bg-black items-center">
     <img
-        class="w-28 col-span-6 md:col-span-8 ms-10"
+        class="w-40 col-span-6 md:col-span-8 ms-10"
         src="{{ asset('storage/images/logo.webp') }}"
         alt="logo firmy">
     <nav class="grid grid-cols-1 sm:grid-rows-2 md:grid-cols-2 md:grid-rows-1 items-center gap-1 text-white col-span-6 md:col-span-4">
