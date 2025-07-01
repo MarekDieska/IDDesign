@@ -1,4 +1,4 @@
-<header class="grid grid-cols-12 bg-black items-center">
+<header class="grid grid-cols-12 bg-gray-950 items-center">
     <img
         class="w-28 col-span-6 md:col-span-8 ms-10"
         src="{{ asset('storage/images/logo.webp') }}"
