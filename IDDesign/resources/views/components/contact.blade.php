@@ -1,38 +1,44 @@
-<section id="con" class="grid grid-cols-3">
-    <h2 class="col-span-3 p-5 text-xl">Kontaktné údaje</h2>
-    <div class="grid justify-items-center">
-        <img class="w-6" src="{{asset("storage/icons/envelope.svg")}}" alt="mail">
-        <h3>Email</h3>
-        <p>ivan.dieska@id-design.sk</p>
-    </div>
-    <div class="grid justify-items-center">
-        <img class="w-6" src="{{asset("storage/icons/phone.svg")}}" alt="phone">
-        <h3>Telefón</h3>
-        <p>043/2388 867</p>
-        <p>0907 526 303</p>
-    </div>
-    <div class="grid justify-items-center">
-        <img class="w-6" src="{{asset("storage/icons/map.svg")}}" alt="map">
-        <h3>Adresa</h3>
-        <p>Aleja Slobody 1904/9</p>
-        <p>026 01 Dolný Kubín</p>
+<section id="con" class="flex flex-col items-center text-center p-6">
+    <h2 class="text-4xl p-5 mb-10 font-extrabold">Kontaktné údaje</h2>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-20">
+        <div class="flex flex-col items-center">
+            <i class="fa-solid fa-envelope fa-2xl mb-4"></i>
+            <h3 class="text-3xl font-extrabold">Email</h3>
+            <p class="font-bold text-xl">ivan.dieska@id-design.sk</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <i class="fa-solid fa-phone fa-2xl mb-4"></i>
+            <h3 class="text-3xl font-extrabold">Telefón</h3>
+            <p class="font-bold text-xl">043/2388 867</p>
+            <p class="font-bold text-xl">0907 526 303</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <i class="fa-solid fa-map fa-2xl mb-4"></i>
+            <h3 class="text-3xl font-extrabold">Adresa</h3>
+            <p class="font-bold text-xl">Aleja Slobody 1904/9</p>
+            <p class="font-bold text-xl">026 01 Dolný Kubín</p>
+        </div>
     </div>
 </section>
 
-<section class="grid grid-cols-3">
-    <h2 class="col-span-3 p-5 text-xl">Fakturačné údaje</h2>
-    <div class="grid justify-items-center">
-        <h3>IČO</h3>
-        <p>45 366 772</p>
-    </div>
-    <div class="grid justify-items-center">
-        <h3>IČ-DPH</h3>
-        <p>SK2022968387</p>
-    </div>
-    <div class="grid justify-items-center">
-        <h3>Adresa</h3>
-        <p>Rybárska 876/15</p>
-        <p>026 01 Dolný Kubín</p>
+
+<section id="con" class="flex flex-col items-center text-center p-6">
+    <h2 class="text-4xl p-5 mb-10 font-extrabold">Fakturačné údaje</h2>
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-20">
+        <div class="grid justify-items-center">
+            <h3 class="text-3xl font-extrabold">IČO</h3>
+            <p class="font-bold text-xl">45 366 772</p>
+        </div>
+        <div class="grid justify-items-center">
+            <h3 class="text-3xl font-extrabold">IČ-DPH</h3>
+            <p class="font-bold text-xl">SK2022968387</p>
+        </div>
+        <div class="grid justify-items-center">
+            <h3 class="text-3xl font-extrabold">Adresa</h3>
+            <p class="font-bold text-xl">Rybárska 876/15</p>
+            <p class="font-bold text-xl">026 01 Dolný Kubín</p>
+        </div>
     </div>
 </section>
 
