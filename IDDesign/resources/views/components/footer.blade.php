@@ -1,4 +1,4 @@
-<section class="p-8 bg-gradient-to-r from-gray-400 via-gray-300 to-gray-400">
+<section class="p-8">
     <a href="#top">
         <button class="bg-gray-800 text-white justify-self-center font-bold border rounded-3xl m-2 py-2 px-5">
             domov
@@ -14,7 +14,7 @@
     </div>
     <img class="w-48 my-10" src="{{ asset('storage/images/logo.webp') }}" alt="logo firmy">
     <div class="grid grid-rows-2 justify-items-center">
-        <img class="w-8" src="{{ asset('storage/icons/instagram.svg') }}" alt="instagram">
+        <i class="fa-brands fa-instagram fa-2xl" title="instagram"></i>
         <p>
             webside modified by ...........
         </p>

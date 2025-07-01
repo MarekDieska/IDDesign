@@ -1,6 +1,6 @@
 <section id="ser" class="bg-gray-800">
     <p class="text-4xl font-extrabold pt-5 mb-5 text-white">Služby</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
         <div class="bg-gray-700 rounded-lg shadow-lg p-3 m-3 max-w-sm border border-gray-700">
             <img src="{{asset("storage/images/tepelko_priklad-1.webp")}}" alt="fotka tepelného čerpadla" class="rounded-t-lg w-full h-48 object-cover mb-4">
             <h2 class="text-2xl font-bold mb-2 text-white">Tepelné čerpadlá</h2>
