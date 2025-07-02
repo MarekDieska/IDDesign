@@ -20,11 +20,11 @@
             transform: translateX(0%);
         }
         100% {
-            transform: translateX(-50%);
+            transform: translateX(calc(-176px * 13));
         }
     }
 
     .animate-carousel {
-        animation: carousel 20s linear infinite;
+        animation: carousel 50s linear infinite;
     }
 </style>

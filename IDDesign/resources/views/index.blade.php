@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta title="stranka id-design" name="id-design" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ID-design</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
