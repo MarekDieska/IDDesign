@@ -17,3 +17,8 @@ yarn-error.log
 /.vscode
 .env
 .idea/workspace.xml
+
+# SSL certificates for local development
+localhost.pem
+localhost-key.pem
+certs/
