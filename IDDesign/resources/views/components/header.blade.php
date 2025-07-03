@@ -1,12 +1,25 @@
-<header class="grid grid-cols-12 bg-gradient-to-r from-gray-900  to-gray-950 items-center">
-    <img
-        class="w-40 col-span-6 sm:col-span-8 ms-10"
-        src="{{ asset('storage/images/logo.webp') }}"
-        alt="logo firmy">
-    <nav class="grid grid-cols-1 grid-rows-2 sm:grid-cols-2 sm:grid-rows-1 items-center sm:gap-2 text-white col-span-6 sm:col-span-4">
-        <a href="#for" class="justify-self-end font-bold border rounded-3xl m-2 py-2 px-5 hover:bg-white hover:text-black transition">Formulár</a>
-        <a href="#con" class="justify-self-end md:justify-self-start font-bold border rounded-3xl m-2 py-2 px-5 hover:bg-white hover:text-black transition">Kontakt</a>
-    </nav>
+<header class="bg-gradient-to-r from-gray-900 to-gray-950 text-white px-4 py-2">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+        <div class="flex items-center justify-between sm:justify-start w-full sm:w-auto">
+            <img
+                class="w-32 sm:w-40"
+                src="{{ asset('storage/images/logo.webp') }}"
+                alt="logo firmy">
+            <a href="#map" class="flex items-center ms-4 text-white sm:text-base text-3xl fa-solid fa-map-pin mr-2 w-32">
+                <i class="font-sans text-2xl">Dolný Kubín</i>
+            </a>
+        </div>
+
+        <nav class="flex flex-col sm:flex-row sm:items-center gap-2 w-full sm:w-auto">
+            <a href="#for" class="text-center font-bold border rounded-3xl py-2 px-5 hover:bg-white hover:text-black transition">
+                Formulár
+            </a>
+            <a href="#con" class="text-center font-bold border rounded-3xl py-2 px-5 hover:bg-white hover:text-black transition">
+                Kontakt
+            </a>
+        </nav>
+    </div>
 </header>
+
 
 
