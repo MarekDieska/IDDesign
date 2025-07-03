@@ -1,6 +1,6 @@
 <section class="bg-gray-800">
     <h2 class="text-4xl p-5 mb-10 font-extrabold text-white">Dodávatelia</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
         <div class="bg-gray-300 rounded-xl overflow-hidden p-4 transform transition-transform duration-300 hover:scale-105 flex items-center justify-center">
             <img
                 alt="logo Panasonic"

@@ -1,7 +1,6 @@
 <section class="bg-gray-800">
-    <hr class="h-0.5">
     <a href="#top">
-        <button class="bg-gray-800 text-white hover:bg-white hover:text-black justify-self-center font-bold border rounded-3xl m-2 py-2.5 px-4">
+        <button class="bg-gray-600 text-white hover:bg-white hover:text-black justify-self-center font-bold border rounded-3xl m-2 py-2.5 px-4">
             <i class="text-xl">Domov</i>
         </button>
     </a>

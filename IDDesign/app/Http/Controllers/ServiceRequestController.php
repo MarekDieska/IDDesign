@@ -33,7 +33,7 @@ class ServiceRequestController extends Controller
 
         $serviceRequest = ServiceRequest::create($validated);
 
-        Mail::to('mdieska1@gmail.com')->send(new ServiceRequestMail($serviceRequest));
+        Mail::to('viki.laticova@gmail.com')->send(new ServiceRequestMail($serviceRequest));
 
         return back()->with('success', 'Formulár bol úspešne odoslaný.');
     }

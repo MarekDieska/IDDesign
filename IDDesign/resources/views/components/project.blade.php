@@ -1,4 +1,4 @@
-<section class="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 text-white py-8">
+<section class="bg-gray-800 text-white py-8">
     <h2 class="text-4xl font-extrabold mb-8 text-center">Dokončené projekty</h2>
 
     <div class="overflow-hidden w-full h-52 relative">
