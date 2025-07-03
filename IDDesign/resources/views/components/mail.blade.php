@@ -72,7 +72,7 @@
                               class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
                 </div>
                 <div>
-                    <button type="submit" class="w-52 bg-blue-600 text-white font-semibold py-3 px-6 rounded-3xl hover:bg-blue-700 transition">
+                    <button type="submit" class="w-52 bg-blue-600 text-white py-3 px-6 rounded-3xl hover:bg-blue-700 transition text-2xl font-bold">
                         Odoslať
                     </button>
                 </div>
