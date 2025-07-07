@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\ServiceRequest;
 use Illuminate\Support\Facades\Mail;
@@ -36,5 +35,56 @@ class ServiceRequestController extends Controller
         Mail::to('viki.laticova@gmail.com')->send(new ServiceRequestMail($serviceRequest));
 
         return back()->with('success', 'Formulár bol úspešne odoslaný.');
+    }
+
+    public function index(Request $request)
+    {
+        $query = \App\Models\ServiceRequest::query();
+
+        $filterFields = [
+            'tepelne_cerpadlo',
+            'klimatizacia',
+            'fotovoltika',
+            'servis',
+            'nabijacia_stanica',
+            'ine',
+        ];
+
+        $query->where(function ($q) use ($request, $filterFields) {
+            $hasAny = false;
+
+            foreach ($filterFields as $field) {
+                if ($request->boolean($field)) {
+                    $q->orWhere($field, true);
+                    $hasAny = true;
+                }
+            }
+
+            if (!$hasAny) {
+                $q->orWhereRaw('1=1');
+            }
+        });
+
+        $requests = $query->get();
+
+        return view('components.tasks', compact('requests'));
+    }
+
+    public function updateMessage(Request $request, $id)
+    {
+        $request->validate(['message' => 'nullable|string']);
+        $record = ServiceRequest::findOrFail($id);
+        $record->message = e($request->message);
+        $record->save();
+
+        return response()->json(['success' => true]);
+    }
+
+    public function completeTask($id)
+    {
+        $request = ServiceRequest::findOrFail($id);
+        $request->delete();
+
+        return redirect()->route('service-requests.tasks')->with('success', 'Záznam bol dokončený.');
     }
 }

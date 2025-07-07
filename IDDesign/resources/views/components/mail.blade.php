@@ -59,7 +59,7 @@
                             <span>Nabíjacia stanica</span>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input type="checkbox" name="nabijacia_stanica">
+                            <input type="checkbox" name="ine">
                             <span>Iné</span>
                         </label>
                     </div>

@@ -4,7 +4,7 @@
             <img
                 class="w-32 sm:w-40"
                 src="{{ asset('storage/images/logo.webp') }}"
-                alt="logo firmy">
+                alt="logo firmy ID-design">
             <a href="#map" class="flex items-center ms-4 text-white sm:text-base text-3xl fa-solid fa-map-pin mr-2 w-32">
                 <i class="font-sans text-2xl">Dolný Kubín</i>
             </a>

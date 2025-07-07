@@ -14,7 +14,7 @@
     </div>
     <img class="w-48 my-10" src="{{ asset('storage/images/logo.webp') }}" alt="logo firmy">
     <div class="grid grid-rows-1 justify-items-center">
-        <i class="fa-brands fa-instagram fa-2xl pb-3" title="instagram"></i>
+        <a href="https://www.instagram.com/ivandieska/" class="fa-brands fa-instagram fa-2xl pb-3" title="instagram"></a>
         <p class="text-gray-300 text-sm md:text-l pt-3">
             modified by<br><strong>Marek Dieška</strong>, <strong>Viktória Latičová</strong>
         </p>

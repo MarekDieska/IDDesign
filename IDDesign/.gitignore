@@ -19,6 +19,6 @@ yarn-error.log
 .idea/workspace.xml
 
 # SSL certificates for local development
-localhost.pem
-localhost-key.pem
+certs/localhost.pem
+certs/localhost-key.pem
 certs/

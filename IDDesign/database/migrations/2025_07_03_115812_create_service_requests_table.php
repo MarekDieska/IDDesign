@@ -25,6 +25,7 @@ return new class extends Migration
             $table->boolean('ine')->default(false);
             $table->text('message')->nullable();
             $table->timestamps();
+            $table->boolean('completed')->default(false);
         });
     }
 
