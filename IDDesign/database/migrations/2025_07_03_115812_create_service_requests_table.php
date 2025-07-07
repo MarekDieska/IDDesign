@@ -26,6 +26,7 @@ return new class extends Migration
             $table->text('message')->nullable();
             $table->timestamps();
             $table->boolean('completed')->default(false);
+            $table->softDeletes();
         });
     }
 

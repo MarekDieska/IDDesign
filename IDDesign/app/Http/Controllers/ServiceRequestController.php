@@ -6,10 +6,11 @@ use Illuminate\Http\Request;
 use App\Models\ServiceRequest;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ServiceRequestMail;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class ServiceRequestController extends Controller
 {
-    public function store(Request $request)
+    public function sendRequest(Request $request)
     {
         $validated = $request->validate([
             'name' => 'required',
@@ -19,23 +20,35 @@ class ServiceRequestController extends Controller
             'message' => 'nullable',
         ]);
 
-        // Sanitize inputs to avoid XSS when displaying later
+        $hasAtLeastOneService = false;
+
+        foreach (['tepelne_cerpadlo', 'klimatizacia', 'fotovoltika', 'servis', 'nabijacia_stanica', 'ine'] as $field) {
+            $validated[$field] = $request->has($field);
+            if ($validated[$field]) {
+                $hasAtLeastOneService = true;
+            }
+        }
+
+        if (! $hasAtLeastOneService) {
+            return back()
+                ->withInput()
+                ->withErrors(['services' => 'Prosím, vyberte aspoň jednu službu.'])
+                ->with('from_service_form', true);
+        }
+
         $validated['name'] = e($validated['name']);
         $validated['address'] = e($validated['address']);
         if (isset($validated['message'])) {
             $validated['message'] = e($validated['message']);
         }
 
-        foreach (['tepelne_cerpadlo', 'klimatizacia', 'fotovoltika', 'servis', 'nabijacia_stanica', 'ine'] as $field) {
-            $validated[$field] = $request->has($field);
-        }
-
         $serviceRequest = ServiceRequest::create($validated);
 
-        Mail::to('viki.laticova@gmail.com')->send(new ServiceRequestMail($serviceRequest));
+        Mail::to('mdieska1@gmail.com')->send(new ServiceRequestMail($serviceRequest));
 
         return back()->with('success', 'Formulár bol úspešne odoslaný.');
     }
+
 
     public function index(Request $request)
     {
