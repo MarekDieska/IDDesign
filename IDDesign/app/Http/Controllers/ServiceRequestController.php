@@ -63,25 +63,28 @@ class ServiceRequestController extends Controller
             'ine',
         ];
 
-        $query->where(function ($q) use ($request, $filterFields) {
-            $hasAny = false;
+        $query->where('completed', false)
+            ->whereNull('deleted_at')
+            ->where(function ($q) use ($request, $filterFields) {
+                $hasAny = false;
 
-            foreach ($filterFields as $field) {
-                if ($request->boolean($field)) {
-                    $q->orWhere($field, true);
-                    $hasAny = true;
+                foreach ($filterFields as $field) {
+                    if ($request->boolean($field)) {
+                        $q->orWhere($field, true);
+                        $hasAny = true;
+                    }
                 }
-            }
 
-            if (!$hasAny) {
-                $q->orWhereRaw('1=1');
-            }
-        });
+                if (!$hasAny) {
+                    $q->orWhereRaw('1=1');
+                }
+            });
 
         $requests = $query->get();
 
         return view('components.tasks', compact('requests'));
     }
+
 
     public function updateMessage(Request $request, $id)
     {
@@ -96,7 +99,8 @@ class ServiceRequestController extends Controller
     public function completeTask($id)
     {
         $request = ServiceRequest::findOrFail($id);
-        $request->delete();
+        $request->completed = true;
+        $request->save();
 
         return redirect()->route('service-requests.tasks')->with('success', 'Záznam bol dokončený.');
     }

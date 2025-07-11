@@ -1,3 +1,4 @@
+<h2 class="text-4xl p-5 font-extrabold text-black">Kontaktujte nás</h2>
 <form id="service-form" action="{{ route('service-request.store') }}" method="POST" class="max-w-xl mx-auto p-6 space-y-6 text-left bg-white rounded shadow">
     @csrf
 

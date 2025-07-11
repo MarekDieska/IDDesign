@@ -11,7 +11,7 @@
         </div>
 
         <nav class="flex flex-col sm:flex-row sm:items-center gap-2 w-full sm:w-auto">
-            <a href="#for" class="text-center font-bold border rounded-3xl py-2 px-5 hover:bg-white hover:text-black transition">
+            <a href="#service-form" class="text-center font-bold border rounded-3xl py-2 px-5 hover:bg-white hover:text-black transition">
                 Formulár
             </a>
             <a href="#con" class="text-center font-bold border rounded-3xl py-2 px-5 hover:bg-white hover:text-black transition">

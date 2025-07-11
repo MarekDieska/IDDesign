@@ -18,5 +18,6 @@ class ServiceRequest extends Model
         'nabijacia_stanica',
         'ine',
         'message',
+        'completed',
     ];
 }

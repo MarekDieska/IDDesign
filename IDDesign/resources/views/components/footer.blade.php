@@ -10,7 +10,7 @@
     <div class="grid grid-rows-3 font-bold">
         <a href="#ser" class="p-2">Služby</a>
         <a href="#con" class="p-2">Kontakt</a>
-        <a href="#for" class="p-2">Formulár</a>
+        <a href="#service-form" class="p-2">Formulár</a>
     </div>
     <img class="w-48 my-10" src="{{ asset('storage/images/logo.webp') }}" alt="logo firmy">
     <div class="grid grid-rows-1 justify-items-center">

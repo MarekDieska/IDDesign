@@ -47,11 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.confirmComplete = function(id) {
         if (confirm('Naozaj chceš dokončiť túto požiadavku?')) {
-            fetch(`/service-requests/${id}`, {
-                method: 'DELETE',
+            fetch(`/service-requests/${id}/complete`, {
+                method: 'POST',
                 headers: {
                     'X-CSRF-TOKEN': csrfToken,
                     'Accept': 'application/json',
+                    'Content-Type': 'application/json',
                 }
             })
                 .then(response => {
